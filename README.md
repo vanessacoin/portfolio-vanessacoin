@@ -1,4 +1,4 @@
-# Projeto de Portifólio Pessoal Vanessa Coin
+# Projeto de Portfólio Pessoal Vanessa Coin
 
 [![NPM](https://img.shields.io/badge/MIT-LICENSE?style=for-the-badge&label=LICENSE&color=%23eb7bc0)](https://github.com/vanessacoin/portifolio-vanessacoin/blob/main/LICENSE) 
 
@@ -7,7 +7,7 @@
 
 # Sobre o projeto
 
-O projeto consiste em uma aplicação web no formato de portifólio para a apresentação dos meus conhecimentos e também para servir de estudo.
+O projeto consiste em uma aplicação web no formato de portfólio para a apresentação dos meus conhecimentos e também para servir de estudo.
 
 
 # Tecnologias utilizadas
