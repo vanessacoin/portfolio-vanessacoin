@@ -59,7 +59,7 @@ header nav ul li:last-of-type a {
     margin: 80px auto;
 }
 
-.div-texts {
+.div-text {
     max-width: 1140px;
     margin: 80px auto;
 }
@@ -71,7 +71,7 @@ header nav ul li:last-of-type a {
     height: auto;
 }
 
-#s-about .div-texts {
+#s-about {
     background-color: #313131;
     border: 2px solid #2a2929;
     padding: 30px;
@@ -98,17 +98,34 @@ main figure img{
     line-height: 1.5;
 }
 
-#s-about h3 {
+#s-about h2 {
     color: #FF0096;
-}
-
-main section.s-experience {
-    background-color: #3b3b3b;
-    padding: 400px 48px;
 }
 
 section.s-about {
     margin-top: 1500px;
 }
 
+#s-experience h2 {
+    color: #FF0096;
+    font-size: 30px;
+}
 
+#s-experience .grid-layout #experience .text-exp>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-exp {
+    color: #eb7bc0;
+    font-size: large;
+}
+
+.date-exp {
+    color: rgb(138, 138, 138);
+}
+
+.company-exp {
+    font-size: large;
+}
