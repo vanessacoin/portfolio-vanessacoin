@@ -27,7 +27,7 @@ header .container {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 header .logo {
@@ -54,9 +54,28 @@ header nav ul li:last-of-type a {
     margin-right: 0;
 }
 
-main div.div-texts {
-    font-size: 80%;
-    margin: 50px 0 50px 50px;
+.grid-layout {
+    max-width: 1140px;
+    margin: 80px auto;
+}
+
+.div-texts {
+    max-width: 1140px;
+    margin: 80px auto;
+}
+
+#s-home .grid-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+#s-about .div-texts {
+    background-color: #313131;
+    border: 2px solid #2a2929;
+    padding: 30px;
+    border-radius: 4px;
 }
 
 main figure img{
@@ -65,21 +84,31 @@ main figure img{
     border-radius: 20px;
 }
 
-h2,h3,h4 {
-    font-weight: 400;
+#home-conatainer-text {
+    font-size: 20px;
 }
 
-h4,h2 {
-    font-weight: 600;
+#s-about {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: large;
 }
 
-h4 {
+#s-about p {
+    line-height: 1.5;
+}
+
+#s-about h3 {
     color: #FF0096;
 }
 
 main section.s-experience {
     background-color: #3b3b3b;
     padding: 400px 48px;
+}
+
+section.s-about {
+    margin-top: 1500px;
 }
 
 
