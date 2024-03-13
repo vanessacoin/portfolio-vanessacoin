@@ -2,6 +2,7 @@ body {
     margin: 0;
     color: #efefef;
     background-color: #2b2b2b;
+    background-image: url("/img/fundo.png");
     padding-top: 70px;
     font-family: "Nanum Gothic", sans-serif;
 }
@@ -15,7 +16,7 @@ header {
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
     background-color: #2b2b2b;
     opacity: 96%;
-    height: 70px;
+    height: 90px;
     top: 0;
     right: 0;
     width: 100%;
@@ -30,13 +31,10 @@ header .container {
     padding: 0 40px;
 }
 
-header .logo {
-    margin-left: 20px;
-    display: inline-block;
-}
-
-header nav {
-    display: inline-block;
+header img {
+    max-width: 20%;
+    height: auto;
+    display: block;
 }
 
 header nav ul li {
@@ -45,7 +43,7 @@ header nav ul li {
 
 header nav ul li a {
     color: #FF0096;
-    font-size: 15px;
+    font-size: 18px;
     margin-right: 20px;
     text-decoration: none;
 }
