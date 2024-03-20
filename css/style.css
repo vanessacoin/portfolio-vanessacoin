@@ -2,7 +2,6 @@ body {
     margin: 0;
     color: #efefef;
     background-color: #2b2b2b;
-    background-image: url("/img/fundo.png");
     padding-top: 70px;
     font-family: "Nanum Gothic", sans-serif;
 }
@@ -86,7 +85,7 @@ main figure img{
     font-size: 20px;
 }
 
-#s-about {
+#s-about, .description-exp {
     text-align: justify;
     text-justify: inter-word;
     font-size: large;
