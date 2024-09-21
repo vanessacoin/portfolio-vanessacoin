@@ -14,4 +14,4 @@ O projeto consiste em uma aplicação web no formato de portfólio para a aprese
 ## Front end
 - HTML
 - CSS
-- Javascript
+- Javascript 
