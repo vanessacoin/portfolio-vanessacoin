@@ -5,14 +5,15 @@ body {
     font-family: "Nanum Gothic", sans-serif;
 }
 
+main figure img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
 ::selection {
     background-color: #eb7bc0;
     color: #fff;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }
 
 h2 {
@@ -30,7 +31,7 @@ header {
     position: fixed;
 }
 
-header .container {
+header div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,12 +85,6 @@ header nav ul li:last-of-type a {
     border-radius: 4px;
 }
 
-main figure img{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
 #home-conatainer-text {
     font-size: 20px;
 }
@@ -104,7 +99,7 @@ main figure img{
     line-height: 1.5;
 }
 
-section.s-about {
+section .s-about {
     margin-top: 1500px;
 }
 
@@ -137,4 +132,8 @@ footer {
 	padding: 20px;
 	text-align: center;
 	margin-top: 50px;
+}
+
+#s-contact {
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
