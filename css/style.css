@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    color: #efefef;
+    color: #EAEAEA;
     background-color: #2b2b2b;
-    font-family: "Nanum Gothic", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main figure img{
@@ -12,12 +12,17 @@ main figure img{
 }
 
 ::selection {
-    background-color: #eb7bc0;
+    background-color: #be5c7b;
     color: #fff;
 }
 
-h2 {
-    color: #FF0096;
+h1, h2, h3 {
+    color: #a8427d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #1abc9c;
 }
 
 header {
@@ -50,7 +55,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #FF0096;
+    color: #db52a2;
     font-size: 18px;
     margin-right: 20px;
     text-decoration: none;
@@ -78,7 +83,7 @@ header nav ul li:last-of-type a {
     padding-top: 70px;
 }
 
-#s-about {
+#s-about, #s-projects {
     background-color: #313131;
     border: 2px solid #2a2929;
     padding: 30px;
@@ -114,7 +119,7 @@ section .s-about {
 }
 
 .title-exp {
-    color: #eb7bc0;
+    color: #db52a2;
     font-size: large;
 }
 
@@ -134,6 +139,27 @@ footer {
 	margin-top: 50px;
 }
 
-#s-contact {
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.contact-item {
+    transition: color 0.3s ease, transform 0.3s ease;
+    list-style-type: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.contact-item img {
+    margin-right: 10px; 
+}
+
+.contact-item span {
+    font-size: 16px; 
+}
+
+#s-contact img:hover {
+    transform: scale(1.07);
+}
+
+.technology-item img {
+    margin-right: 20px; 
 }
