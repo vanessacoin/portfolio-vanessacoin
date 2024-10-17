@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/icons/favicon-n.png" type="image/png">
-    <title>Portifólio Vanessa Coin</title>
+    <title>Vanessa da Rocha Coin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,7 +36,7 @@
                         <img src="assets/images/eu.png" alt="foto autoral">
                     </figure>
 
-                    <div id="home-conatainer-text">
+                    <div class="home-conatainer-text">
                         <h1>Vanessa da Rocha Coin</h1>
                         <h2>Desenvolvedora Java Angular</h2>
                         <p>Focada em expandir minha atuação na área de programação predominantemente com linguagem Java. Expresso minha adaptabilidade e entusiasmo por novas tecnologias e desafios.</p>
@@ -47,9 +48,9 @@
         <section id="s-about">
             <div class="grid-layout"> 
                 <h2>Sobre Mim</h2>
-                <p>Estudante de Análise e Desenvolvimento de Sistemas na Universidade de Caxias do Sul (UCS), minha jornada começou baseada em SQL, mas meu atual entusiasmo reside na expansão do meu horizonte como programadora Full Stack. Com dedicação aos estudos em Java, JavaScript, CSS e HTML, estou pronta para transitar para um papel mais amplo no desenvolvimento de software. Busco oportunidades empolgantes para aplicar minha paixão por tecnologias front-end e back-end, contribuindo de maneira proativa para projetos inovadores.</p>
-                <p>Iniciei minha carreira no Suporte Técnico de sistema ERP, depois passei para o setor de Desenvolvimento, atuações nas quais pude desenvolver experiências sólidas em SQL, Scrum, análise de dados e pensamento lógico, além de adquirir conhecimentos abrangentes em ERP, PL/SQL, trabalho em equipe e ótimo relacionamento interpessoal! Todas essas skills contribuíram para quem eu sou hoje e para minha imersão na área de tecnologia.</p>
-            </div>
+                <p>Sou estudante de Análise e Desenvolvimento de Sistemas na UCS 🎓(4/6) e em processo de formação como programadora.</p>
+                <p>Desde a infância, estive imersa em um ambiente de tecnologia, envolvendo hardware, software, jogos, eletrônica e mecânica, graças à influência de minha família, especialmente meu irmão e meu pai. Essa exposição despertou minha curiosidade sobre o funcionamento desses sistemas e, ao longo do tempo, me inspirou a querer não apenas entender, mas também criar soluções tecnológicas inovadoras que possam facilitar a vida das pessoas e impulsionar a inovação.</p>
+                <p>Iniciei minha carreira em TI em 2019, atuando no Suporte Técnico de sistemas ERP e posteriormente, migrando para o setor de Desenvolvimento, atuações nas quais pude desenvolver experiências sólidas em SQL, Scrum, análise de dados e pensamento lógico, além de adquirir conhecimentos abrangentes em ERP, PL/SQL, trabalho em equipe e ótimo relacionamento interpessoal! Todas essas skills contribuíram para quem eu sou hoje e para meu aprofundamento na área de tecnologia.</p>
         </section>
 
         <section id="s-experience">
@@ -57,13 +58,21 @@
                 <h2>Experiências</h2>
                 <div id="experience">
                     <div class="text-exp">
+                        <h5 class="company-exp">Empresa: Methos Cloud ERP</h5>
                          <div>
-                            <h4 class="title-exp">Programadora de Sistemas de Informação</h4>
+                            <h4 class="title-exp">Desenvolvedora de Banco de Dados</h4>
                             <p class="date-exp">Nov 2020 - Mar 2024 (3 anos e 6 meses)</p>
                          </div>
 
-                        <h5 class="company-exp">Empresa: Methos Tecnologia da Informação</h5>
-                        <p class="description-exp">Atuei no desenvolvimento e manutenção do sistema ERP baseado em fluxogramas, SQL e em rotinas PL/SQL, com um modelo de organização Agile Scrum e tive a oportunidade de participar da integração de uma API, que realiza o registro, consulta e retorno de boletos se comunicando diretamente com a instituição financeira de forma automática, que promoveu uma alternativa ao processo manual de envio e importação de arquivo de remessa e retorno bancário.</p>
+                        <ul class="experience-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Colaborei com a equipe no desenvolvimento e manutenção do sistema ERP</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Realizei configurações e testes de integração com API utilizando Postman</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Desenvolvi consultas SQL para coletar dados a serem enviados via API PlugBoleto</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Elaborei fluxograma utilizando Maker Studio para automatizar a coleta de dados e envio para API PlugBoleto</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Implementei consultas SQL e functions PL/SQL em fluxogramas e relatórios utilizando Maker Studio</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Realizei análises e ajustes em Rotinas PL/SQL</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Atuei em sprints semanais seguindo metodologia Scrum</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -74,8 +83,12 @@
                             <p class="date-exp">Nov 2019 - Nov 2020 (1 ano)</p>
                          </div>
 
-                        <h5 class="company-exp">Empresa: Methos Tecnologia da Informação</h5>
-                        <p class="description-exp">Contribuí na elaboração de manuais para uso interno e também para os usuários. Atuei no setor de suporte prestando auxílio ao uso do ERP, esclarecimento de dúvidas, parametrizações, cadastros, validação de notas fiscais eletrônicas, assim como também utilizei de SQL para realizar procedimentos e ajustes desejados pelos usuários ou sob demanda de implementação. </p>
+                        <ul class="experience-list">
+                            <li><i class="fa-regular fa-circle-check"></i> Colaborei no atendimento e suporte técnico dos usuários do sistema ERP, via chat, e-mail e telefone</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Desenvolvi consultas em SQL a fim de implementar exportadores de dados personalizados para os clientes</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Identifiquei bugs e registrei a análise de funcionamento, impactos e possíveis soluções</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Realizei treinamentos para instruir usuários sobre o funcionamento das telas e recursos do sistema.</li>
+                        </ul>
                     </div>
                 </div>
              </div>
@@ -97,9 +110,17 @@
             <div class="grid-layout">
                 <h2>Tecnologias</h2>
                 <div class="technology-item">
-                    <img src="assets/icons/java-icon.svg" alt="Java" width="80">
-                    <img src="assets/icons/sql-icon.svg" alt="SqL" width="80">
-                    <img src="assets/icons/angular-icon.svg" alt="Angular" width="80">
+                    <svg width="100px" height="100px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" >
+                        <path d="M193.918,208.369c-4.729-10.456-6.849-22.652-3.236-33.731c3.612-11.327,11.703-20.413,19.794-28.878 c22.525-22.531,50.285-39.085,72.316-61.986c12.197-12.573,22.278-27.634,25.762-44.937c2.864-12.695,1.496-25.764-1.117-38.337 c11.7,13.319,15.559,32.363,12.197,49.541c-3.608,19.292-14.316,36.344-26.886,51.031c-10.081,11.827-21.659,22.282-33.731,31.993 c-14.065,11.327-27.88,23.524-36.716,39.457c-7.472,12.943-9.215,28.876-4.11,42.942c8.341,24.146,27.756,42.071,38.338,64.848 c-11.703-10.332-23.152-21.036-33.86-32.361C211.471,236.001,200.889,223.307,193.918,208.369z M257.398,189.448 c-2.115,19.792,8.213,38.462,20.539,53.151c5.972,6.596,11.076,14.687,11.323,23.899c0.251,12.318-6.716,23.774-15.684,31.861 c2.119-0.246,3.612-2.115,5.355-3.11c13.443-8.589,26.385-19.418,32.982-34.227c4.357-10.083,3.362-22.034-2.362-31.371 c-6.724-10.953-15.559-20.662-20.786-32.61c-2.867-6.721-3.862-14.562-1.496-21.657c3.114-9.583,9.834-17.426,16.93-24.272 c19.54-18.544,43.189-31.743,65.844-46.179c-28.629,8.214-56.883,19.542-81.03,37.343 C273.702,153.727,259.515,169.658,257.398,189.448z M393.447,283.052c13.568,0.748,26.882,10.704,29.374,24.397 c2.366,11.825-3.358,23.524-10.705,32.485c-12.075,14.438-28.382,24.771-44.807,33.609c-1.622,0.991-2.99,2.237-4.235,3.608 c21.659-5.478,43.314-13.689,60.867-27.756c9.705-8.091,18.294-18.799,20.163-31.619c1.743-11.076-2.86-22.528-11.077-29.871 c-9.96-9.09-24.021-12.448-37.218-10.704c-7.593,0.995-15.931,2.613-21.158,8.961C380.877,284.921,386.971,282.429,393.447,283.052 z M123.22,318.647c16.303,4.357,33.108,5.603,49.787,6.724c14.936,0.995,29.875,1.246,44.937,1.12 c38.833-0.619,77.916-3.236,116.003-11.699c3.608-0.87,7.593-1.493,10.833-3.733c6.347-4.11,13.313-7.347,20.162-10.583 c-30.995,4.979-62.113,9.215-93.478,11.205c-31.74,1.991-63.731,3.236-95.593,1.121c-9.086-0.87-18.423-1.371-26.886-4.858 c-1.994-0.87-4.733-2.609-3.738-5.227c1.869-3.361,5.603-4.977,8.839-6.72c13.694-6.473,28.629-10.081,43.193-14.313 c-25.021-0.376-49.916,5.971-72.814,15.806c-5.105,2.491-10.83,4.481-14.936,8.714c-1.622,1.739-1.622,4.732,0.247,6.222 C113.511,315.787,118.487,317.28,123.22,318.647z M324.864,352.88c-21.784,3.859-43.694,7.472-65.726,8.589 c-24.147,1.618-48.294,0.247-72.191-2.241c-4.604-0.623-9.211-1.368-13.317-3.483c-2.116-1.246-4.231-3.236-4.106-5.854 c0.247-4.106,3.73-6.967,6.222-9.956c-7.715,2.739-15.434,5.599-21.906,10.708c-2.742,2.116-5.478,5.474-4.733,9.208 c1.125,4.356,5.356,6.97,9.09,8.96c9.208,4.733,19.54,6.846,29.625,8.714c25.511,4.11,51.527,4.235,77.167,2.488 c27.141-2.115,54.148-6.594,80.411-14.313C337.932,362.342,330.836,358.479,324.864,352.88z M188.068,395.951 c-6.97,1.99-14.066,4.357-19.79,8.957c-2.868,2.241-5.105,6.104-3.734,9.713c1.743,4.604,6.1,7.347,10.203,9.705 c10.708,5.854,22.78,8.589,34.604,10.708c26.765,4.229,54.27,3.608,80.908-1.12c15.806-2.989,31.615-7.221,46.301-13.815 c-9.584-3.984-18.917-8.467-27.878-13.693c-15.559,2.738-31.246,5.603-47.178,6.598c-21.032,1.618-42.319-0.125-63.355-2.738 c-4.98-1.121-11.202-1.618-14.563-5.976C181.847,400.677,185.828,398.063,188.068,395.951z M358.345,475.982 c17.424-3.604,34.977-7.719,50.908-15.806c4.976-2.867,11.076-5.979,12.698-11.95c0.87-5.725-5.105-8.714-9.337-11.08 c2.613,2.993,4.356,7.347,1.74,10.83c-4.357,5.853-11.821,8.091-18.42,10.332c-20.66,5.85-42.072,8.216-63.355,10.582 c-56.385,5.102-113.146,6.348-169.528,1.618c-18.92-1.994-38.217-4.109-56.264-10.829c-2.86-1.246-7.217-2.492-7.217-6.352 c1.117-3.354,4.357-5.227,7.217-6.845c12.945-6.595,27.384-10.207,41.822-11.077c-4.228-2.491-9.208-2.738-14.062-2.613 c-12.076,0.373-23.9,3.483-35.349,7.347c-9.834,3.604-19.916,7.59-27.76,14.811c-3.111,2.735-5.971,7.962-2.739,11.699 c4.98,5.353,12.699,6.72,19.54,8.338c38.338,6.599,77.171,10.328,116.011,11.699C255.781,488.184,307.684,485.942,358.345,475.982z M409.378,482.706c-23.402,7.468-47.672,11.574-71.822,14.936c-41.696,5.227-83.769,6.845-125.716,5.603 c-25.515-0.995-51.03-2.738-76.176-6.974c5.85,3.984,13.071,5.227,19.794,7.096c28.257,5.976,57.255,7.096,86.01,7.966 c42.19,0.748,84.387-0.87,125.962-7.468c19.669-3.48,39.459-7.715,57.13-16.927c9.215-4.854,18.552-12.326,20.163-23.152 C435.391,473.741,421.951,478.349,409.378,482.706z"> </path>
+                    </svg>
+                    
+                    <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M 3 0 L 3 20 L 17 20 L 17 19 L 16 19 L 4 19 L 4 1 L 12 1 L 12 4 L 12 5 L 16 5 L 16 12 L 17 12 L 17 5 L 17 4 L 13 0 L 12 0 L 3 0 z M 13 1.3535156 L 15.646484 4 L 13 4 L 13 1.3535156 z M 6.5 13 C 5.671573 13 5 13.671573 5 14.5 C 5 15.328427 5.671573 16 6.5 16 L 7.5 16 C 7.776142 16 8 16.223858 8 16.5 C 8 16.776142 7.776142 17 7.5 17 L 5 17 L 5 18 L 7.5 18 C 8.328427 18 9 17.328427 9 16.5 C 9 15.671573 8.328427 15 7.5 15 L 6.5 15 C 6.223858 15 6 14.776142 6 14.5 C 6 14.223858 6.223858 14 6.5 14 L 9 14 L 9 13 L 6.5 13 z M 12 13 L 11.816406 13.007812 L 11.632812 13.033203 L 11.453125 13.076172 L 11.277344 13.134766 L 11.107422 13.208984 L 10.947266 13.298828 L 10.794922 13.404297 L 10.652344 13.521484 L 10.521484 13.652344 L 10.404297 13.794922 L 10.300781 13.947266 L 10.208984 14.107422 L 10.134766 14.277344 L 10.076172 14.451172 L 10.035156 14.632812 L 10.007812 14.816406 L 10 15 L 10 16 L 10.007812 16.183594 L 10.035156 16.367188 L 10.076172 16.546875 L 10.134766 16.722656 L 10.208984 16.890625 L 10.300781 17.052734 L 10.404297 17.205078 L 10.521484 17.347656 L 10.652344 17.478516 L 10.794922 17.595703 L 10.947266 17.699219 L 11.107422 17.791016 L 11.277344 17.865234 L 11.453125 17.923828 L 11.632812 17.964844 L 11.816406 17.992188 L 12 18 L 12.183594 17.992188 L 12.367188 17.964844 L 12.546875 17.923828 L 12.722656 17.865234 L 12.892578 17.791016 L 13.013672 17.720703 L 13.146484 17.853516 A 0.50005 0.50005 0 0 0 13.5 18 L 14 18 L 14 17 L 13.728516 17 L 13.791016 16.890625 L 13.865234 16.722656 L 13.923828 16.546875 L 13.964844 16.367188 L 13.992188 16.183594 L 14 16 L 14 15 L 13.992188 14.816406 L 13.964844 14.632812 L 13.923828 14.451172 L 13.865234 14.277344 L 13.791016 14.107422 L 13.699219 13.947266 L 13.595703 13.794922 L 13.478516 13.652344 L 13.347656 13.521484 L 13.205078 13.404297 L 13.052734 13.298828 L 12.892578 13.208984 L 12.722656 13.134766 L 12.546875 13.076172 L 12.367188 13.033203 L 12.183594 13.007812 L 12 13 z M 15 13 L 15 18 L 19 18 L 19 17 L 16 17 L 16 13 L 15 13 z M 12 14 L 12.130859 14.007812 L 12.259766 14.033203 L 12.382812 14.076172 L 12.5 14.134766 L 12.609375 14.207031 L 12.707031 14.292969 L 12.792969 14.390625 L 12.865234 14.5 L 12.923828 14.617188 L 12.966797 14.740234 L 12.992188 14.869141 L 13 15 L 13 16 L 12.992188 16.130859 L 12.966797 16.257812 L 12.353516 15.646484 L 11.646484 16.353516 L 12.257812 16.964844 L 12.130859 16.992188 L 12 17 L 11.869141 16.992188 L 11.740234 16.964844 L 11.617188 16.923828 L 11.5 16.865234 L 11.390625 16.792969 L 11.292969 16.707031 L 11.207031 16.607422 L 11.134766 16.5 L 11.076172 16.382812 L 11.033203 16.257812 L 11.007812 16.130859 L 11 16 L 11 15 L 11.007812 14.869141 L 11.033203 14.740234 L 11.076172 14.617188 L 11.134766 14.5 L 11.207031 14.390625 L 11.292969 14.292969 L 11.390625 14.207031 L 11.5 14.134766 L 11.617188 14.076172 L 11.740234 14.033203 L 11.869141 14.007812 L 12 14 z "/>
+                    </svg>
+
+                    <svg width="100px" height="100px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 16 3.9355469 L 4.3613281 8.1679688 L 6.4492188 23.839844 L 16 29.144531 L 25.550781 23.837891 L 27.638672 8.1679688 L 16 3.9355469 z M 16 6.0644531 L 25.443359 9.4980469 L 23.699219 22.578125 L 16 26.855469 L 8.3007812 22.578125 L 6.5566406 9.4980469 L 16 6.0644531 z M 16 8 L 10 22 L 12 22 L 13.289062 19 L 18.710938 19 L 20 22 L 22 22 L 16 8 z M 16 12.550781 L 16.019531 12.609375 L 16.720703 14.359375 L 17.849609 17 L 14.150391 17 L 15.279297 14.359375 L 15.980469 12.609375 L 16 12.550781 z"/>
+                    </svg>                      
                 </div>
             </div>
         </section>
@@ -108,24 +129,49 @@
             <div class="grid-layout">
                 <h2>Contato</h2>
                 <div class="contact-item">
-                    <img src="assets/icons/email-icon.svg" alt="email" width="35">
-                    <span>vanessarcoin@gmail.com</span>
+                    <a href="https://www.linkedin.com/in/vanessacoin/" target="_blank">
+                        <span class="icon-contact"></span>
+                            <svg width="40px" height="40px" viewBox="-10.75 -10.75 119.25 119.25" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z M30.562,81.966h-13.74V37.758h13.74V81.966z M23.695,31.715c-4.404,0-7.969-3.57-7.969-7.968c0.001-4.394,3.565-7.964,7.969-7.964c4.392,0,7.962,3.57,7.962,7.964C31.657,28.146,28.086,31.715,23.695,31.715z M82.023,81.966H68.294V60.467c0-5.127-0.095-11.721-7.142-11.721c-7.146,0-8.245,5.584-8.245,11.35v21.869H39.179V37.758h13.178v6.041h0.185c1.835-3.476,6.315-7.14,13-7.14c13.913,0,16.481,9.156,16.481,21.059V81.966z"/>
+                            </svg>
+                        </span>
+                        <span class="description-contact">in/vanessacoin</span>
+                    </a>
                 </div>
 
                 <div class="contact-item">
-                    <img src="assets/icons/phone-icon.svg" alt="phone" width="35">
-                    <span>(54) 99164-6537</span>
+                    <a href="https://wa.me/5554991646537" target="_blank">
+                        <span class="icon-contact">
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM9 8C9 7.44772 9.44772 7 10 7H14C14.5523 7 15 7.44772 15 8V16C15 16.5523 14.5523 17 14 17H10C9.44772 17 9 16.5523 9 16V8ZM10 9H14V15H10V9Z"/>
+                            <\svg>
+                        </span>
+                        <span class="description-contact">(54) 99164-6537</span>
+                    </a>
                 </div>
 
                 <div class="contact-item">
-                    <img src="assets/icons/linkedin-icon.svg" alt="linkedin" width="35">
-                    <span>in/vanessacoin</span>
+                    <a href="https://github.com/vanessacoin" target="_blank">
+                        <span class="icon-contact">
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM7.53366 7.08397L7.5316 7.08474C7.26002 7.18609 7.04549 7.40042 6.9441 7.67199C6.93539 7.69534 6.92686 7.71875 6.91854 7.7422C6.65067 8.49667 6.57954 9.31617 6.70595 10.1058C6.71242 10.1462 6.71942 10.1866 6.72693 10.2269C6.69805 10.2732 6.66999 10.3201 6.64278 10.3675C6.21126 11.1187 5.98982 11.9947 6.00036 12.8816C6.00148 14.7829 6.50083 16.1389 7.41451 17.0447C8.30946 17.9319 9.45151 18.2334 10.4004 18.3624L10.4308 18.3664C11.488 18.5237 12.509 18.5147 13.5629 18.3383L13.5643 18.3381C14.517 18.2225 15.6687 17.9357 16.5726 17.0531C17.4961 16.1514 17.9985 14.7917 17.9996 12.8815C18.0102 11.9947 17.7887 11.1187 17.3572 10.3675C17.33 10.32 17.3018 10.2731 17.2729 10.2266C17.2804 10.1864 17.2873 10.1461 17.2938 10.1058C17.4202 9.31256 17.3465 8.48924 17.0735 7.73278C17.0658 7.7113 17.0578 7.68981 17.0497 7.66833C16.948 7.39922 16.7354 7.18692 16.4661 7.08569L16.4649 7.08524L16.4637 7.08479L16.4613 7.08389L16.4564 7.08209L16.4462 7.07845L16.4248 7.07115C16.41 7.06627 16.3942 7.0614 16.3774 7.05664C16.3438 7.04709 16.3062 7.03799 16.2648 7.02999C15.7853 6.93737 14.9893 7.02349 13.8406 7.80507C13.8141 7.82311 13.7874 7.84153 13.7605 7.86033C13.6952 7.8444 13.6298 7.82938 13.5643 7.81524C12.5189 7.58974 11.4451 7.59231 10.4004 7.82295C10.3466 7.83481 10.293 7.84728 10.2394 7.86034C10.2125 7.84154 10.1858 7.82312 10.1592 7.80507C9.00585 7.02077 8.20666 6.93756 7.72867 7.03037C7.68807 7.03825 7.65128 7.04718 7.6183 7.05651C7.60182 7.06117 7.58633 7.06592 7.57182 7.07068L7.55081 7.0778L7.54087 7.08134L7.53604 7.0831L7.53366 7.08397Z"/>
+                            </svg>
+                        </span>
+                        <span class="description-contact">github.com/vanessacoin</span>
+                    </a>
                 </div>
 
                 <div class="contact-item">
-                    <img src="assets/icons/github-icon.svg" alt="github" width="35">
-                    <span>github.com/vanessacoin</span>
+                    <a href="mailto:vanessarcoin@gmail.com" target="_blank">
+                        <span class="icon-contact">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM7.005 9C7.005 8.45 7.45 8 8 8H16C16.55 8 17 8.45 17 9V15C17 15.55 16.55 16 16 16H8C7.45 16 7 15.55 7 15L7.005 9ZM12 12.5L8.00001 9.99997V15H16V9.99997L12 12.5ZM12 11.5L8.00001 9.00001H16L12 11.5Z"/>
+                            </svg>                
+                        </span>          
+                        <span class="description-contact">vanessarcoin@gmail.com</span>
+                    </a>
                 </div>
+                
             </div>
         </section>
     

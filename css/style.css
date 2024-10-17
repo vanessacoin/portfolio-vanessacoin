@@ -1,33 +1,93 @@
+/* ======================
+   Core Styles
+====================== */
+/* Colors */
+:root {
+    --color-bg: #2b2b2b;
+    --color-text: #f0f0f0;
+    --color-primary: #e91e63;
+    --color-accent: #ff80ab;
+    --color-selection: #be5c7b;
+    --color-secondary: #81c784;
+    --color-footer: #212020;
+    --color-link-hover: #4caf50;
+}
+
+/* Relative Units */
+:root {
+    --spacing-small: 0.5rem; 
+    --spacing-medium: 1rem; 
+    --spacing-large: 1.5rem; 
+    --spacing-xlarge: 2rem; 
+    --spacing-xxlarge: 2.5rem; 
+}
+
+/* Reset CSS para consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    color: #EAEAEA;
-    background-color: #2b2b2b;
+    color: var(--color-text);
+    background-color: var(--color-bg);
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 main figure img{
-    width: 300px;
-    height: 300px;
+    width: 90%; 
+    height: auto;
     border-radius: 20px;
 }
 
 ::selection {
-    background-color: #be5c7b;
-    color: #fff;
+    background-color: var(--color-selection);
+    color: var(--color-text);
 }
 
+
+/* ======================
+   Typography
+====================== */
 h1, h2, h3 {
-    color: #a8427d;
+    color: var(--color-primary);
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: var(--spacing-large);
 }
 
+p {
+    margin-bottom: var(--spacing-large); 
+}
+
+section {
+    padding: var(--spacing-large); 
+}
+
+
+/* ======================
+   Links and Buttons
+====================== */
 a {
-    color: #1abc9c;
+    color: var(--color-accent);
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
 }
 
+
+/* ======================
+   Header
+====================== */
 header {
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2b2b2b;
+    background-color: var(--color-bg);
     opacity: 96%;
     height: 90px;
     top: 0;
@@ -37,11 +97,11 @@ header {
 }
 
 header div {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0 40px;
+    padding: 0 var(--spacing-large);
 }
 
 header img {
@@ -50,21 +110,23 @@ header img {
     display: block;
 }
 
-header nav ul li {
-    display: inline-block;
+header nav ul {
+    display: inline-flex;
+    list-style: none;
 }
 
-header nav ul li a {
-    color: #db52a2;
-    font-size: 18px;
-    margin-right: 20px;
-    text-decoration: none;
+header nav ul li {
+    margin-right: var(--spacing-medium);
 }
 
 header nav ul li:last-of-type a {
     margin-right: 0;
 }
 
+
+/* ======================
+   Layout Sections
+====================== */
 .grid-layout {
     max-width: 1140px;
     margin: 80px auto;
@@ -75,12 +137,21 @@ header nav ul li:last-of-type a {
     margin: 80px auto;
 }
 
+#s-home {
+    margin-top: var(--spacing-xlarge);
+}
+
 #s-home .grid-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
     padding-top: 70px;
+
+}
+
+#s-about {
+    margin-top: var(--spacing-large); 
 }
 
 #s-about, #s-projects {
@@ -90,76 +161,143 @@ header nav ul li:last-of-type a {
     border-radius: 4px;
 }
 
-#home-conatainer-text {
+
+/* ======================
+   Section Styles
+====================== */
+.home-conatainer-text {
     font-size: 20px;
 }
 
-#s-about, .description-exp {
+.home-conatainer-text h2 {
+    font-weight: bold;
+}
+
+.home-conatainer-text p {
+    font-size: 1.2em;
+}
+
+#s-about, .experience-list {
     text-align: justify;
     text-justify: inter-word;
-    font-size: large;
+}
+
+.experience-list {
+    list-style: none;
+    margin: 0 0 var(--spacing-xlarge) var(--spacing-medium);
+    line-height: 1.5;
 }
 
 #s-about p {
     line-height: 1.5;
-}
-
-section .s-about {
-    margin-top: 1500px;
+    font-size: large;
 }
 
 #s-experience h2 {
     font-size: 30px;
 }
 
+.elegant-list {
+    text-align: left;
+}
+
+#s-technologies svg {
+    fill: var(--color-secondary);
+}
+
 #s-experience .grid-layout #experience .text-exp>div {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .title-exp {
-    color: #db52a2;
+    color: var(--color-accent);
     font-size: large;
 }
 
-.date-exp {
-    color: rgb(138, 138, 138);
-}
-
 .company-exp {
-    font-size: medium;
+    text-align: left;
+    margin-bottom: var(--spacing-small);
 }
 
+.date-exp {
+    color: #c4c4c4;
+}
+
+
+/* ======================
+   Footer
+====================== */
 footer {
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
-    background-color: #212020;
+    background-color: var(--color-footer);
 	padding: 20px;
 	text-align: center;
 	margin-top: 50px;
 }
 
+
+/* ======================
+   Contact & Technologies
+====================== */
 .contact-item {
-    transition: color 0.3s ease, transform 0.3s ease;
     list-style-type: none;
+    margin-bottom: var(--spacing-small);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex; 
-    align-items: center;
-    margin-bottom: 18px;
 }
 
-.contact-item img {
-    margin-right: 10px; 
+.contact-item svg {
+    margin-right: var(--spacing-small);
+    fill: var(--color-secondary);
+    transition: transform 0.3s ease;
 }
 
 .contact-item span {
     font-size: 16px; 
 }
 
-#s-contact img:hover {
-    transform: scale(1.07);
+.contact-item a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.technology-item img {
-    margin-right: 20px; 
+.contact-item a:hover svg,
+.contact-item a:hover span {
+    transform: scale(1.07);
+    color: var(--color-link-hover);
+}
+
+.contact-item a:hover {
+    cursor: pointer;
+}
+
+.description-contact {
+    margin-left: var(--spacing-small);
+}
+
+.icon-contact svg {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-item svg, .technology-item svg {
+    margin-right: var(--spacing-small);
+    fill: var(--color-secondary);
+    transition: transform 0.3s ease;
+}
+
+.technology-item svg {
+    margin-right: var(--spacing-medium);
+    color: var(--color-secondary);
+}
+
+.s-about {
+    margin-top: 1500px;
+}
+
+.company-exp {
+    font-size: medium;
 }
