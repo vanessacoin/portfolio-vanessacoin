@@ -20,6 +20,11 @@
     --spacing-large: 1.5rem; 
     --spacing-xlarge: 2rem; 
     --spacing-xxlarge: 2.5rem; 
+    --width-contact: 2.5rem; 
+    --height-contact: 2.5rem; 
+    --width-technology: 7rem; 
+    --height-technology: 7rem; 
+
 }
 
 /* Reset CSS para consistência entre navegadores */
@@ -161,6 +166,10 @@ header nav ul li:last-of-type a {
     border-radius: 4px;
 }
 
+#s-technologies h2 {
+    margin-bottom: var(--spacing-xxlarge);
+}
+
 
 /* ======================
    Section Styles
@@ -195,14 +204,6 @@ header nav ul li:last-of-type a {
 
 #s-experience h2 {
     font-size: 30px;
-}
-
-.elegant-list {
-    text-align: left;
-}
-
-#s-technologies svg {
-    fill: var(--color-secondary);
 }
 
 #s-experience .grid-layout #experience .text-exp>div {
@@ -240,23 +241,23 @@ footer {
 /* ======================
    Contact & Technologies
 ====================== */
-.contact-item {
+.item-contact {
     list-style-type: none;
     margin-bottom: var(--spacing-small);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-item svg {
+.item-contact svg {
     margin-right: var(--spacing-small);
     fill: var(--color-secondary);
     transition: transform 0.3s ease;
 }
 
-.contact-item span {
+.item-contact span {
     font-size: 16px; 
 }
 
-.contact-item a {
+.item-contact a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -264,13 +265,13 @@ footer {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-item a:hover svg,
-.contact-item a:hover span {
+.item-contact a:hover svg,
+.item-contact a:hover span {
     transform: scale(1.07);
     color: var(--color-link-hover);
 }
 
-.contact-item a:hover {
+.item-contact a:hover {
     cursor: pointer;
 }
 
@@ -279,19 +280,24 @@ footer {
 }
 
 .icon-contact svg {
-    width: 40px;
-    height: 40px;
+    width: var(--width-contact);
+    height: var(--height-contact);
 }
 
-.contact-item svg, .technology-item svg {
+.icon-technology svg {
+    width: var(--width-technology);
+    height: var(--height-technology);
+}
+
+.item-contact svg {
     margin-right: var(--spacing-small);
     fill: var(--color-secondary);
     transition: transform 0.3s ease;
 }
 
-.technology-item svg {
+.item-technology svg {
     margin-right: var(--spacing-medium);
-    color: var(--color-secondary);
+    fill: var(--color-accent);
 }
 
 .s-about {
