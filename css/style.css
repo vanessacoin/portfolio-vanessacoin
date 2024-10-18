@@ -130,7 +130,7 @@ header nav ul li:last-of-type a {
 }
 
 nav a {
-    color: white; 
+    color: var(--color-accent); 
     text-decoration: none; 
 }
 
