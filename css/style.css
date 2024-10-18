@@ -3,14 +3,14 @@
 ====================== */
 /* Colors */
 :root {
-    --color-bg: #2b2b2b;
-    --color-text: #f0f0f0;
-    --color-primary: #e91e63;
-    --color-accent: #ff80ab;
-    --color-selection: #be5c7b;
-    --color-secondary: #81c784;
-    --color-footer: #212020;
-    --color-link-hover: #4caf50;
+    --color-bg: #1c1c1c;
+    --color-text: #e0e0e0;
+    --color-primary: #b0bec5;
+    --color-accent: #90a4ae;
+    --color-selection: #78909c;
+    --color-secondary: #64b5f6;
+    --color-footer: #1a1a1a;
+    --color-link-hover: #2196f3;
 }
 
 /* Relative Units */
@@ -24,7 +24,10 @@
     --height-contact: 2.5rem; 
     --width-technology: 7rem; 
     --height-technology: 7rem; 
-
+    --size-font-medium: 1.5rem;
+    --size-font-large: 2rem;
+    --size-font-xlarge: 3rem;
+    --size-font-xxlarge: 4rem;
 }
 
 /* Reset CSS para consistência entre navegadores */
@@ -42,8 +45,11 @@ body {
     margin: 0;
     color: var(--color-text);
     background-color: var(--color-bg);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Nunito", sans-serif;
     text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main figure img{
@@ -63,8 +69,12 @@ main figure img{
 ====================== */
 h1, h2, h3 {
     color: var(--color-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Raleway", sans-serif;
     margin-bottom: var(--spacing-large);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: var(--size-font-large);
 }
 
 p {
@@ -99,6 +109,7 @@ header {
     right: 0;
     width: 100%;
     position: fixed;
+    padding: var(--spacing-medium) var(--spacing-large);
 }
 
 header div {
@@ -110,15 +121,20 @@ header div {
 }
 
 header img {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
-    display: block;
+    display: inline-block;
 }
 
 nav ul {
-    display: inline-flex;
+    display: flex;
     list-style: none;
     padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
 }
 
 nav ul li {
@@ -156,13 +172,20 @@ nav a:hover {
     margin-top: var(--spacing-xlarge);
 }
 
+#home h1 {
+    font-size: var(--size-font-xlarge);
+}
+
+#home h2 {
+    font-size: var(--size-font-medium);
+}
+
 #home .grid-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    padding-top: 70px;
-
+    padding-top: var(--size-font-xxlarge);
 }
 
 #about {
@@ -188,10 +211,6 @@ nav a:hover {
     font-size: 20px;
 }
 
-.home-conatainer-text h2 {
-    font-weight: bold;
-}
-
 .home-conatainer-text p {
     font-size: 1.2em;
 }
@@ -210,10 +229,6 @@ nav a:hover {
 #about p {
     line-height: 1.5;
     font-size: large;
-}
-
-#experience h2 {
-    font-size: 30px;
 }
 
 #experience .grid-layout #experience-item .text-exp>div {
