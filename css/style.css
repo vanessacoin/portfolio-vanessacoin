@@ -115,17 +115,27 @@ header img {
     display: block;
 }
 
-header nav ul {
+nav ul {
     display: inline-flex;
     list-style: none;
+    padding: 0;
 }
 
-header nav ul li {
+nav ul li {
     margin-right: var(--spacing-medium);
 }
 
 header nav ul li:last-of-type a {
     margin-right: 0;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
 }
 
 
@@ -142,11 +152,11 @@ header nav ul li:last-of-type a {
     margin: 80px auto;
 }
 
-#s-home {
+#home {
     margin-top: var(--spacing-xlarge);
 }
 
-#s-home .grid-layout {
+#home .grid-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,18 +165,18 @@ header nav ul li:last-of-type a {
 
 }
 
-#s-about {
+#about {
     margin-top: var(--spacing-large); 
 }
 
-#s-about, #s-projects {
+#about, #projects {
     background-color: #313131;
     border: 2px solid #2a2929;
     padding: 30px;
     border-radius: 4px;
 }
 
-#s-technologies h2 {
+#technologies h2 {
     margin-bottom: var(--spacing-xxlarge);
 }
 
@@ -186,7 +196,7 @@ header nav ul li:last-of-type a {
     font-size: 1.2em;
 }
 
-#s-about, .experience-list {
+#about, .experience-list {
     text-align: justify;
     text-justify: inter-word;
 }
@@ -197,16 +207,16 @@ header nav ul li:last-of-type a {
     line-height: 1.5;
 }
 
-#s-about p {
+#about p {
     line-height: 1.5;
     font-size: large;
 }
 
-#s-experience h2 {
+#experience h2 {
     font-size: 30px;
 }
 
-#s-experience .grid-layout #experience .text-exp>div {
+#experience .grid-layout #experience-item .text-exp>div {
     display: flex;
     justify-content: space-between;
 }
@@ -300,7 +310,7 @@ footer {
     fill: var(--color-accent);
 }
 
-.s-about {
+.about {
     margin-top: 1500px;
 }
 
