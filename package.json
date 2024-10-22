@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "sass": "^1.80.3"
+  },
+  "scripts": {
+  "sass": "sass src/assets/css/style.scss src/assets/css/style.css --watch"
+}
+}
+

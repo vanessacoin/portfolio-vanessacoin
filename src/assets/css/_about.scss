@@ -1,0 +1,22 @@
+#about { 
+    background-color: #313131;
+    border: 2px solid #2a2929;
+    padding: 30px;
+    border-radius: 4px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    
+        p {
+            line-height: 1.5;
+            font-size: var(--size-font-medium);
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+      }
+}
+
+

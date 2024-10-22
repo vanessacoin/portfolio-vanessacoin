@@ -1,0 +1,45 @@
+#contact .grid-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.icon-contact svg {
+    width: var(--width-contact);
+    height: var(--height-contact);
+}
+
+.item-contact {
+    list-style-type: none;
+    margin-bottom: var(--spacing-small);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-contact svg {
+    margin-right: var(--spacing-small);
+    fill: var(--color-secondary);
+    transition: transform 0.3s ease;
+}
+
+.item-contact a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.item-contact a:hover svg,
+.item-contact a:hover span {
+    transform: scale(1.07);
+    color: var(--color-link-hover);
+}
+
+.item-contact a:hover {
+    cursor: pointer;
+}
+
+.description-contact {
+    margin-left: var(--spacing-small);
+}

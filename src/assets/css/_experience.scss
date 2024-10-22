@@ -1,0 +1,25 @@
+#experience-item .text-exp>div {
+    display: flex;
+    justify-content: space-between;
+}    
+
+.title-exp {
+    color: var(--color-accent);
+}
+
+.company-exp {
+    text-align: left;
+    margin-bottom: var(--spacing-small);
+}
+
+.date-exp {
+    color: #c4c4c4;
+}
+
+.experience-list {
+    list-style: none;
+    margin: 0 0 var(--spacing-xlarge) var(--spacing-medium);
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+}
