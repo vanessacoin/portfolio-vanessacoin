@@ -3,6 +3,7 @@
 ====================== */
 :root {
     --color-bg: #1c1c1c;
+    --color-bg-secondary: #313131;
     --color-text: #e0e0e0;
     --color-primary: #b0bec5;
     --color-accent: #90a4ae;
@@ -16,14 +17,32 @@
     --spacing-medium: 1rem; 
     --spacing-large: 1.5rem; 
     --spacing-xlarge: 2rem; 
-    --spacing-xxlarge: 2.5rem; 
+    --spacing-xxlarge: 2.5rem;
+
+    --padding-small: 3em;
+    --padding-large: 4em;
+    
+    --margin-lateral-xsmall: 2vw;
+    --margin-lateral-small: 5vw;
+    --margin-lateral-medium: 9vw;
+    --margin-title-bottom: 1.25rem;
+    --margin-subtitle-bottom: 1rem;
+    --margin-title-main-bottom: 2rem;
   
     --width-contact: 2.5rem; 
     --height-contact: 2.5rem; 
     --width-technology: 7rem; 
     --height-technology: 7rem;
   
-    --size-font-small: 1.2em;
+    --font-size-title: 2.5rem;
+    --font-size-subtitle: 1.5rem;
+    --font-size-subtitle-main: 1.8rem;
+    --font-size-paragraph: 1.125rem;
+    --font-size-footer: 0.9rem;
+
+    --font-size-xxsmall: 0.7rem;
+    --size-font-xsmall: 1rem;
+    --size-font-small: 1.2rem;
     --size-font-medium: 1.5rem;
     --size-font-large: 2rem;
     --size-font-xlarge: 3rem;

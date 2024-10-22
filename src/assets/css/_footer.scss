@@ -1,7 +1,9 @@
 footer {
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
     background-color: var(--color-header-footer);
-	padding: 20px;
+	padding: 1.5em;
 	align-items: center;
-	margin-top: 50px;
+}
+
+footer p {
+	font-size: var(--font-size-footer);
 }

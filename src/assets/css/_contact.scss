@@ -1,8 +1,6 @@
 #contact .grid-layout {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;
 }
 
 .icon-contact svg {
@@ -17,7 +15,6 @@
 }
 
 .item-contact svg {
-    margin-right: var(--spacing-small);
     fill: var(--color-secondary);
     transition: transform 0.3s ease;
 }
@@ -41,5 +38,5 @@
 }
 
 .description-contact {
-    margin-left: var(--spacing-small);
+    margin-left: var(--spacing-medium);
 }

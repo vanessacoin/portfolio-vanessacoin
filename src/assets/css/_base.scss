@@ -21,15 +21,24 @@ h1, h2, h3, h4 {
 }
 
 .title {
-    font-size: var(--size-font-xlarge);
+    font-size: var(--font-size-title);
+    margin-bottom: var(--margin-title-bottom);
+    color: var(--color-secondary);
+    font-weight: bold;
 }
 
 .subtitle {
-    font-size: var(--size-font-large);
+    font-size: var(--font-size-subtitle);
+    margin-bottom: var(--margin-subtitle-bottom);
 }
 
-p, li, h3, h4, span {
-    font-size: var(--size-font-medium);
+.title-main {
+    font-size: var(--font-size-subtitle-main);
+    margin-bottom: var(--margin-title-main-bottom);
+}
+
+p, h3, h4, span, a, li {
+    font-size: var(--font-size-paragraph);
 }
 
 a {
@@ -47,12 +56,15 @@ section {
     box-sizing: border-box;
 }
 
+.content {
+    padding: var(--padding-large);
+}
+
 .grid-layout {
-    min-width: 1025px;
-    max-width: 1200px;
-    margin: 80px auto;
+    margin: var(--margin-lateral-medium) auto;
     display: flex;
     justify-content: space-between;
+    padding: var(--padding-large);
 }
 
 ::selection {

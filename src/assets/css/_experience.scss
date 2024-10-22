@@ -4,7 +4,8 @@
 }    
 
 .title-exp {
-    color: var(--color-accent);
+    color: var(--color-secondary);
+    font-weight: bold;
 }
 
 .company-exp {
@@ -13,7 +14,7 @@
 }
 
 .date-exp {
-    color: #c4c4c4;
+    color: var(--color-accent);
 }
 
 .experience-list {
@@ -22,4 +23,8 @@
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
+}
+
+#experience .content {
+    margin: 0 var(--margin-lateral-medium) 0 var(--margin-lateral-medium);
 }
